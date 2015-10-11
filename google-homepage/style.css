@@ -1,5 +1,7 @@
 #nav {
-    float: left;
+    float : right;
+    padding-right: 30px;
+    position: relative;
 }
 
 ul {
@@ -16,6 +18,18 @@ a {
 	    text-decoration: none;
 }
 
+.nav_links{
+
+    opacity: .75;
+    color: #000000;
+    display: inline-block;
+    line-height: 24px;
+    outline: none;
+    vertical-align: middle;
+    font-family: arial,sans-serif;
+
+}
+
 #opt{
 	height: 30px;
     width: 30px;
@@ -23,9 +37,52 @@ a {
 
 #search_area{
 	   clear: both;
+       margin: 0 auto;
+        min-width: 980px;
 }
 
 #search_box{
     display: block;
 	
+}
+
+.button{
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    color: #666;
+    font-family: arial,sans-serif;
+    cursor: default;
+    text-decoration: none;
+}
+
+#signin{
+    color: #fff;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+}
+
+.search{
+    height: 36px;
+    line-height: 27px;
+    color: #757575;
+
+
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
 }
