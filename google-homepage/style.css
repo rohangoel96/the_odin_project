@@ -1,5 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box; /*http://learnlayout.com/box-model.html*/
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -8,7 +8,8 @@
 #nav {
     float : right;
     position: relative;
-    padding-right: 30px;
+    top: 8px;
+    left: -20px;
 }
 
 ul {
@@ -22,11 +23,15 @@ li {
 }
 
 a {
-	    text-decoration: none;
+    color: #000;
+	text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    opacity: .75;
+    padding-right: 15px;
 }
 
 .nav_links{
-
     opacity: .75;
     color: #000000;
     display: inline-block;
@@ -34,7 +39,6 @@ a {
     outline: none;
     vertical-align: middle;
     font-family: arial,sans-serif;
-
 }
 
 
@@ -43,6 +47,7 @@ a {
     clear: both;
     top: 150px;
 }
+
 #search_box_div{
     background: #fff;
     max-width: 584px;
@@ -51,7 +56,7 @@ a {
     padding: 5px 9px 0;
     height: 38px;
     position: relative;
-    top: 30px;
+    top: 38px;
     left: 6px;
 }
 
@@ -102,6 +107,7 @@ a {
     padding: 0 16px;
     text-align: center;
 }
+
 #search_button_area{
     position: relative;
     top: 20px;
