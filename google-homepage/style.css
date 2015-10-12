@@ -35,16 +35,30 @@ a:hover{
     text-decoration: underline;
 }
 
-.nav_links{
-    opacity: .75;
-    color: #000000;
+.button{
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
     display: inline-block;
-    line-height: 24px;
-    outline: none;
-    vertical-align: middle;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    color: #666;
     font-family: arial,sans-serif;
+    cursor: default;
+    text-decoration: none;
 }
 
+#signin{
+    color: #fff;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+}
+
+#signin:hover{
+    background-color: #3B78DC;
+}
 
 #search_area{
 	position: relative;
@@ -73,29 +87,8 @@ a:hover{
 
 }
 
-.button{
-    background: #f8f8f8;
-    border: 1px solid #c6c6c6;
-    display: inline-block;
-    line-height: 28px;
-    padding: 0 12px;
-    border-radius: 2px;
-    color: #666;
-    font-family: arial,sans-serif;
-    cursor: default;
-    text-decoration: none;
-}
-
-#signin{
-    color: #fff;
-    border: 1px solid #4285f4;
-    font-weight: bold;
-    outline: none;
-    background: #4285f4;
-}
-
-#signin:hover{
-    background-color: #3B78DC;
+input:focus {
+    outline: none; /* no selction around text field when active*/
 }
 
 .search{
@@ -125,8 +118,4 @@ a:hover{
     position: relative;
     top: 20px;
     left: -6px;
-}
-
-input:focus {
-    outline: none; /* no selction around text field when active*/
 }
