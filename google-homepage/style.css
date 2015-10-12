@@ -1,7 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
 #nav {
     float : right;
-    padding-right: 30px;
     position: relative;
+    padding-right: 30px;
 }
 
 ul {
@@ -30,20 +37,31 @@ a {
 
 }
 
-#opt{
-	height: 30px;
-    width: 30px;
-}
 
 #search_area{
-	   clear: both;
-       margin: 0 auto;
-        min-width: 980px;
+	position: relative;
+    clear: both;
+    top: 150px;
+}
+#search_box_div{
+    background: #fff;
+    max-width: 584px;
+    margin: -1px 0px 1px;
+    border: 1px solid #c6c6c6;
+    padding: 5px 9px 0;
+    height: 38px;
+    position: relative;
+    top: 30px;
+    left: 6px;
 }
 
 #search_box{
     display: block;
-	
+    border: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
 }
 
 .button{
@@ -71,8 +89,6 @@ a {
     height: 36px;
     line-height: 27px;
     color: #757575;
-
-
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 2px;
@@ -81,8 +97,17 @@ a {
     font-family: arial,sans-serif;
     font-size: 13px;
     font-weight: bold;
-    margin: 11px 4px;
+    margin: 11px 2px;
     min-width: 54px;
     padding: 0 16px;
     text-align: center;
+}
+#search_button_area{
+    position: relative;
+    top: 20px;
+    left: -6px;
+}
+
+input:focus {
+    outline: none; /* no selction around text field when active*/
 }
