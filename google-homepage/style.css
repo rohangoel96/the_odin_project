@@ -31,6 +31,10 @@ a {
     padding-right: 15px;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 .nav_links{
     opacity: .75;
     color: #000000;
@@ -53,7 +57,7 @@ a {
     max-width: 584px;
     margin: -1px 0px 1px;
     border: 1px solid #c6c6c6;
-    padding: 5px 9px 0;
+    padding: 0px 9px 0;
     height: 38px;
     position: relative;
     top: 38px;
@@ -90,6 +94,10 @@ a {
     background: #4285f4;
 }
 
+#signin:hover{
+    background-color: #3B78DC;
+}
+
 .search{
     height: 36px;
     line-height: 27px;
@@ -97,7 +105,6 @@ a {
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 2px;
-    color: #757575;
     cursor: default;
     font-family: arial,sans-serif;
     font-size: 13px;
@@ -107,6 +114,12 @@ a {
     padding: 0 16px;
     text-align: center;
 }
+
+.search:hover{
+    color:#000;
+    border: 1px solid rgba(75, 75, 75, .2);
+}
+
 
 #search_button_area{
     position: relative;
