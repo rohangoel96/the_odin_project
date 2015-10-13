@@ -5,6 +5,16 @@
 		<title>Google</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="https://www.google.co.in/images/branding/product/ico/googleg_lodp.ico">
+		<script type="text/javascript">
+			function normalSearch () {
+				var search_string = document.getElementById("search_box").value;
+				var new_search_string = search_string.split(" ").join("+")
+				window.location = 'https://www.google.co.in/#q=' + new_search_string;
+			}
+		</script>
+
+
+
 	</head>
 
 	<body>
@@ -28,8 +38,8 @@
 				<div>
 			
 			<div id="search_button_area">
-				<input class="button search" type="submit" value="Google Search">
-				<input class="button search" type="submit" value="I'm Feeling Lucky">
+				<input class="button search" type="submit" value="Google Search" onclick=normalSearch()>
+				<input class="button search" type="submit" value="I'm Feeling Lucky" onclick=normalSearch()>
 			</div>
 		</div>
 		</center>
