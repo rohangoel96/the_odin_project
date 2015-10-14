@@ -24,4 +24,11 @@ $(document).ready(function(){
 	    };
 	});
 
+	$('#reset').on('click',function(){
+		$("#board").empty();
+		$("#size").val('0');
+
+
+	});
+
 });
