@@ -1,3 +1,8 @@
+body {
+    background-image: url("http://trueclean4u.com/wp-content/uploads/2014/12/JOES-Website-Background-light-grey.jpg");
+    background-color: #cccccc;
+}
+
 #heading{
 	text-align: center;
 }
@@ -10,6 +15,7 @@
 	top: 40px;
 	margin: 0;
 	padding: 0 0 0 0;
+	background-color: #cccccc;
 }
 
 .pixel{
@@ -25,3 +31,23 @@
 	position: relative;
 	top: 20px;
 }
+
+#reset {
+ 
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  background: #3498db;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  cursor: default;
+  
+}
+
+#reset:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+

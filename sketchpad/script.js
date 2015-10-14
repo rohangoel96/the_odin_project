@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    //var name = prompt("Please enter your name", "Rohan");
+    var name = prompt("Please enter your name", "Rohan");
     if (name!=null) {
     	$("#heading").text(name+"'s SketchPad");
     };
