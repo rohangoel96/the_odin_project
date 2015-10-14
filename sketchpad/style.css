@@ -21,12 +21,7 @@
 	vertical-align: top; /*important to remove white spaces between divs*/
 }
 
-/*
-.pixel:hover{
-	background-color: #000;
-}
-*/
-.opt{
+#opt{
 	position: relative;
 	top: 20px;
 }

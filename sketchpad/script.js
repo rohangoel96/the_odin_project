@@ -33,11 +33,51 @@ $(document).ready(function(){
 	
 });
 
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+
 function mouseEnterPixelHandler(obj){
-		$(obj).css("background-color","green");
+
+	var color;
+	
+	if ($("input[name=type]:checked").val()=='regular') {
+
+		color = "yellow";
+
 	}
+	else{
+
+		color = getRandomColor();
+
+	}
+	$(obj).css("background-color",color);
+
+}
 
 function mouseLeavePixelHandler (obj) {
-		$(obj).css("background-color","yellow");
+	
+	if ($("input[name=type]:checked").val()=='regular') {
+		
+		color="green";	
+	
 	}
+	else{
+			
+			color = getRandomColor();
+
+	}	
+
+	$(obj).css("background-color",color);
+
+}
+
 
