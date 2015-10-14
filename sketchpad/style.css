@@ -1,5 +1,23 @@
-* {
-  -webkit-box-sizing: border-box; /*http://learnlayout.com/box-model.html*/
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+#heading{
+	text-align: center;
 }
+
+#board{
+	position: relative;
+	height: 480px;
+	width: 480px;
+	border:1px solid black;
+	top: 50px;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+.pixel{
+	
+	border:1px solid black;
+	margin: 0 0 0 0;
+	padding-top: 0px;
+	z-index: 0;
+	vertical-align: top; /*important to remove white spaces between divs*/
+}
+
