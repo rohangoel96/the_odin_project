@@ -7,7 +7,7 @@
 	height: 480px;
 	width: 480px;
 	border:1px solid black;
-	top: 50px;
+	top: 40px;
 	margin: 0;
 	padding: 0 0 0 0;
 }
@@ -21,7 +21,12 @@
 	vertical-align: top; /*important to remove white spaces between divs*/
 }
 
-.button{
+/*
+.pixel:hover{
+	background-color: #000;
+}
+*/
+.opt{
 	position: relative;
 	top: 20px;
 }
