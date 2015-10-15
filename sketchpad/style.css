@@ -7,30 +7,14 @@ body {
 	text-align: center;
 }
 
-#board{
+#select_size{
 	position: relative;
-	height: 480px;
-	width: 480px;
-	border:1px solid black;
-	top: 40px;
-	margin: 0;
-	padding: 0 0 0 0;
-	background-color: #cccccc;
-}
-
-.pixel{
-	
-	border:1px solid black;
-	margin: 0 0 0 0;
-	padding-top: 0px;
-	z-index: 0;
-	vertical-align: top; /*important to remove white spaces between divs*/
-	float : left;/*important to remove white spaces between divs*/
+	top: -5px;
 }
 
 #opt{
 	position: relative;
-	top: 20px;
+	top: 10px;
 }
 
 #reset {
@@ -51,4 +35,27 @@ body {
   background: #3cb0fd;
   text-decoration: none;
 }
+
+#board{
+	position: relative;
+	height: 480px;
+	width: 480px;
+	border:1px solid black;
+	top: 30px;
+	margin: 0;
+	padding: 0 0 0 0;
+	background-color: #cccccc;
+}
+
+.pixel{
+	
+	border:1px solid black;
+	margin: 0 0 0 0;
+	padding-top: 0px;
+	z-index: 0;
+	vertical-align: top; /*important to remove white spaces between divs*/
+	float : left;/*important to remove white spaces between divs*/
+}
+
+
 
