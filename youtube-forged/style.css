@@ -6,26 +6,32 @@ body{
 
 header{
 	position: relative;
-	left: -22px;
 	top: -2px;
+	left: 2px;
 }
 
 footer{
 	position: relative;
-	left: -22px;
+	left: 2px;
+	bottom: -6px;
 }
 
 aside{
 	float: right;
-	left: 30px;
+	margin-right: 75px;
 }
 
 section{
 	position: relative;
-	left: 70px;
+	left: 75px;
 	margin-bottom: 5px;
 }
+
 #details{
-	left: 67px;
+	left: 72px;
 	top: -2px;
+}
+
+#comments{
+	left: 72px;
 }
