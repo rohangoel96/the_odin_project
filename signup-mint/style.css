@@ -1,0 +1,39 @@
+#header{
+	position: relative;
+	top: 70px;
+	width: 690px;
+	margin:0 auto; /*center align div*/
+}
+#logo{
+	position: relative;
+	display: inline-block;
+	left: -8px;
+	top: -25px;
+	height: 56px;
+	width: 89px;
+
+	background-image: url('https://images.mint.com/web-client/images/mint-logo.svg');
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+#header_links{
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-right: 7px;
+}
+
+#signup_container{
+	margin:0 auto; /*center align div*/
+	
+}
+
+.links{
+	text-decoration: none;
+	color: #333333;
+    font-family: "AvenirNext-DemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
