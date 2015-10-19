@@ -4,6 +4,7 @@
 	width: 690px;
 	margin:78px auto 0; /*center align div*/
 }
+
 #logo{
 	position: relative;
 	display: inline-block;
@@ -17,6 +18,7 @@
     background-position: center center;
 	
 }
+
 #header_links{
 	position: relative;
 	display: inline-block;
@@ -30,6 +32,12 @@
 	width: 704px;
 	margin:0 auto; /*center align div*/
 	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+	margin-bottom: 40px;
+    font-size: 30px;
+    font-family: "AvenirNext-DemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 .links{
@@ -62,12 +70,6 @@ label{
     color: #333;
     font-family: "AvenirNext-DemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 25px;
-}
-
-h1{
-	margin-bottom: 40px;
-    font-size: 30px;
-    font-family: "AvenirNext-DemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 #signup_left{
@@ -116,8 +118,6 @@ li{
     font-size: 12px;
     font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-
 
 select{
 	display: block;
