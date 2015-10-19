@@ -1,8 +1,8 @@
 #header{
 	position: relative;
-	top: 70px;
+	left: 10px;
 	width: 690px;
-	margin:0 auto; /*center align div*/
+	margin:78px auto 0; /*center align div*/
 }
 #logo{
 	position: relative;
@@ -26,11 +26,10 @@
 
 #signup_container{
 	position: relative;
-	top: 40px;
+	top: -25px;
 	width: 704px;
 	margin:0 auto; /*center align div*/
 	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
-	
 }
 
 .links{
@@ -144,11 +143,29 @@ select, select[size="0"], select[size="1"] {
 	background: #3EB6CF;
 }
 
-#fake_links{
+.footer_text{
 	font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #a5a5a5;
-    font-size: 13px;
-    position: relative;
 	width: 704px;
 	margin:0 auto; 
+}
+
+.seal_icons{
+	height: 58px;
+	width: 140px;
+	background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+}
+
+#seals{
+	margin: 20px 0 20px 0;
+}
+
+#norton{
+	background-image: url('https://images.mint.com/web-client/images/security/vseal.svg');
+}
+
+#truste{
+	background-image: url('https://images.mint.com/web-client/images/security/truste.svg');
 }
