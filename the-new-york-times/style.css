@@ -1,0 +1,114 @@
+body{
+	float: right;
+	width: 98%;
+	box-shadow: -4px 0 4px 0 rgba(25,25,25,0.04);
+	margin: 0;
+	padding-top: 48px;
+}
+
+#nav-bar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 98%;
+	height: 48px;
+	border-bottom: 1px solid #ccc;
+}
+
+#sections_button{
+	display: inline-block;
+	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
+   	margin: 0;    
+    height: 30px;
+    width: 100px;
+    
+    border-radius: 3px;
+    background-color: white;
+    
+    cursor: pointer;
+    text-transform: uppercase;
+
+    border: 1px solid #e2e2e2;
+
+    position: fixed;
+    top: 7px;
+    left: 10px;
+}
+
+
+.button_text{
+	display: inline-block;
+    width: auto; 
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+#sections_button:hover{
+	background-color: #F6F6F6 ;
+}
+
+.button:hover{
+	background-color: #F6F6F6 ;
+}
+
+.button{
+    display: inline-block;
+	height: 30px;
+    width: 75px;
+    margin-top: 11px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+}
+
+#button-group{
+    margin-left: 100px;
+    width: 200px;
+}
+
+#button-group p{
+    margin-left: 30px;
+    margin-top: 8px;
+}
+
+#logo{
+    width: 185px;
+    height: 26px;
+    background-image: url('http://a1.nyt.com/assets/article/20151018-112704/images/foundation/logos/nyt-logo-185x26.png');
+    margin-top:-28px;
+    margin-left: -40px;
+}
+
+#login{
+    float: right;
+    margin-top:-25px;
+}
+
+#login input{
+    background-color: #6288a5;
+    border-color: #4d7b9f;
+    color: #fff;
+    font-weight: 700;
+    height: 30px;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    border-radius: 3px;
+    padding: 7px 9px;
+    border: 1px solid #e2e2e2;
+    font-size: 11px;
+    margin-top: -5px;
+    margin-right: 45px;
+}
+
+#settings{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 30px;
+    width: 30px;
+
+    position: fixed;
+    top: 10px;
+    right: 8px;
+}
