@@ -200,3 +200,26 @@ body{
     font-style: normal;
     font-family: georgia,"times new roman",times,serif;
 }
+
+#img1{
+    display: block;
+    overflow:visible;
+    width: 950px;
+    position: relative;
+    left: -100px;
+}
+
+#video{
+    position: relative;
+    left: -40px;
+}
+
+#video>p{
+    font-size: 12px;
+    color: #999;
+    line-height: 23px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: georgia,"times new roman",times,serif;
+    margin: 1px 0 0 0;
+}
