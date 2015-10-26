@@ -102,17 +102,24 @@ body{
     margin-right: 45px;
 }
 
-#settings{
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: center;
+#login :hover{
+    cursor: pointer;
+    background-color: #6288b6;
+}
 
+
+#settings{
     height: 30px;
     width: 30px;
-
     position: fixed;
     top: 10px;
     right: 8px;
+    opacity: 0.75;
+}
+
+#settings:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 #ribbon_container{
