@@ -194,14 +194,14 @@ body{
 }
 
 #middle_col{
-    float: left;/*creating columns*/
+    float: left; /*creating columns*/
     display: inline-block; 
     width: 55%;
     margin:10px 10px 10px 10px;
 }
 
 #right_col{
-    float: left;/*creating columns*/
+    float: left; /*creating columns*/
     display: inline-block; 
     width: 30%;
     margin:10px 0px 10px 10px;
