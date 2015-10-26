@@ -170,7 +170,7 @@ body{
 
 #img-description{
     margin: 5px 0 0 0;
-    width: 60%;
+    width: 65%;
     font-size: 14px;
     font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
 }
@@ -401,4 +401,42 @@ body{
     font-size: 11px;
     color: #999;
     padding-bottom: 20px;
+}
+
+#share_holder{
+    margin: 15px 0 0 0;
+}
+
+.left_col_button{
+    display: block;
+    width: 85px;
+    height: 25px;
+    border-bottom: 1px solid lightgray;
+    padding: 6px 0 6px 0;
+    margin: 0px;
+    float: left;
+}
+
+.left_col_button :hover{
+    background: #F6F6F6;
+    cursor: pointer;
+}
+
+.left_col_button p{
+    margin: 0px;
+    padding: 6px;
+    vertical-align: middle;
+    font-size: 13px;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    color:#555;
+}
+
+.share_icon{
+    width: auto;
+    max-height:20px;
+    float: left;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-top: 3px;
 }
