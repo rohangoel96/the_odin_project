@@ -2,12 +2,15 @@
  	.latest-article{
  		width: 16.6666666667%;
  	}
+
  	#nav #links{
  		display: inline-block;
  	}
+ 	
  	#nav #social{
  		display: inline-block;
  	}
+ 	
  	#dropdown{
  		visibility: hidden;
  	}
@@ -46,7 +49,6 @@
  	.article_text{
  		font-size: 16px;
  	}	
-
 }
 
 
@@ -54,9 +56,11 @@
  	.latest-article{
  		width: 16.6666666667%;
  	}
+ 	
  	#nav #links{
  		display: inline-block;
  	}
+ 	
  	#dropdown{
  		visibility: hidden;
  	}
@@ -94,14 +98,13 @@
  	.article_text{
  		font-size: 16px;
  	}	
-
-
 }
 
 @media only screen and (min-width: 850px) and (max-width: 1024px) {
  	.latest-article{
  		width: 25%;
  	}
+	
 	#nav #social{
  		display: inline-block;
  	}
@@ -115,8 +118,6 @@
 	.article_text{
  		font-size: 20px;
  	}	
-
-
 }
 
 
@@ -124,13 +125,16 @@
  	.latest-article{
  		width: 33.333333%;
  	}
+	
 	#nav #social{
  		display: inline-block;
  	}
 
+
  	#footer{
  		height: 100px
  	}
+
 
  	#footer #links{
  		display: none;
@@ -145,8 +149,8 @@
 	.article_text{
  		font-size: 20px;
  	}	
-
 }
+
 @media only screen and (max-width: 650px){
  	.latest-article{
  		width: 50%;
