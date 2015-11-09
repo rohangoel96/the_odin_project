@@ -58,6 +58,7 @@
 #nav #links ul li :hover{
     color: black;
     background-color: #f1f1f1;  
+    cursor: pointer;
 }
 
 #nav #social{
@@ -83,3 +84,27 @@
     background-position: center; 
     margin-right: 0.5%;
 }
+
+.featured_article{
+	width: 100%;
+	height: 275px;
+	position: relative;
+}
+
+.article_img{
+	background-size: 100%;
+	width: 100%;
+	min-height: 275px;
+	z-index: -1;
+	position:relative;
+}
+
+.article_text{
+	position: absolute; 
+   	top: 200px; 
+   	color: white;
+   	font-size: 30px;
+   	font-weight: 700;
+   	font-family: 'Arimo', sans-serif;
+} 
+
