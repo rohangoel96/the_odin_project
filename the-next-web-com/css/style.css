@@ -119,13 +119,18 @@
 
 .article_text{
 	position: absolute; 
-   	top: 215px; 
+   	bottom: 10px; 
    	left: 15px;
    	color: white;
    	font-size: 25px;	
    	font-weight: 700;
    	font-family: 'Arimo', sans-serif;
 } 
+
+.article_text_holder{
+	background-color: rgba(0,0,0,0.5);
+}
+
 
 #latest-news-head{
 	width: 100%;

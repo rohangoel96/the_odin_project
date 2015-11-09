@@ -42,6 +42,11 @@
   		height: 200px;
   		margin: 0;
  	}
+
+ 	.article_text{
+ 		font-size: 16px;
+ 	}	
+
 }
 
 
@@ -85,6 +90,12 @@
   		height: 200px;
   		margin: 0;
  	}
+
+ 	.article_text{
+ 		font-size: 16px;
+ 	}	
+
+
 }
 
 @media only screen and (min-width: 850px) and (max-width: 1024px) {
@@ -100,6 +111,12 @@
   		display: inline-block;
   		width: 33.333%;
 	}
+
+	.article_text{
+ 		font-size: 20px;
+ 	}	
+
+
 }
 
 
@@ -124,6 +141,10 @@
   		float: left;
   		display: inline-block;
 	}
+
+	.article_text{
+ 		font-size: 20px;
+ 	}	
 
 }
 @media only screen and (max-width: 650px){
