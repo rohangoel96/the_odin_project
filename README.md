@@ -17,3 +17,6 @@
 
 - The New York Times Article ( More HTML/CSS )
 ![ScreenShot](http://oi59.tinypic.com/2up955f.jpg)
+
+- The Next Web HomePage ( Basic Responsive Web Design )
+![ScreenShot](http://oi65.tinypic.com/fw5dzr.jpg)
