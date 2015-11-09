@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1170px){
+@media only screen and (min-width: 1200px){
  	.latest-article{
  		width: 16.6666666667%;
  	}
@@ -12,10 +12,40 @@
  		visibility: hidden;
  	}
 
+ 	#left-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 50%;
+  		height: 400px;
+ 	}
+
+ 	#right-top-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 50%;
+  		height: 200px;
+  		margin: 10px 0 0 0;
+ 	}
+
+ 	#right-bottom-1-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 25%;
+  		height: 200px;
+  		margin: 0;
+ 	}
+
+ 	#right-bottom-2-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 25%;
+  		height: 200px;
+  		margin: 0;
+ 	}
 }
 
 
-@media only screen and (min-width: 1024px) and (max-height: 1170px){
+@media only screen and (min-width: 1024px) and (max-height: 1200px){
  	.latest-article{
  		width: 16.6666666667%;
  	}
@@ -24,6 +54,36 @@
  	}
  	#dropdown{
  		visibility: hidden;
+ 	}
+ 	 	#left-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 50%;
+  		height: 400px;
+ 	}
+
+ 	#right-top-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 50%;
+  		height: 200px;
+  		margin: 10px 0 0 0;
+ 	}
+
+ 	#right-bottom-1-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 25%;
+  		height: 200px;
+  		margin: 0;
+ 	}
+
+ 	#right-bottom-2-article{
+ 		float: left;
+  		display: inline-block;
+  		width: 25%;
+  		height: 200px;
+  		margin: 0;
  	}
 }
 
@@ -34,6 +94,12 @@
 	#nav #social{
  		display: inline-block;
  	}
+
+ 	[id^="right"]{
+  		float: left;
+  		display: inline-block;
+  		width: 33.333%;
+	}
 }
 
 
@@ -45,10 +111,32 @@
  		display: inline-block;
  	}
 
+ 	#footer{
+ 		height: 100px
+ 	}
+
+ 	#footer #links{
+ 		display: none;
+ 	}
+
+ 	[id^="right"]{
+  		width: 33.333%;
+  		float: left;
+  		display: inline-block;
+	}
+
 }
 @media only screen and (max-width: 650px){
  	.latest-article{
- 		width: 33.333333%;
+ 		width: 50%;
+ 	}
+	
+	#footer{
+ 		height: 100px
+ 	}
+ 	
+ 	#footer #links{
+ 		display: none;
  	}
 }
 
