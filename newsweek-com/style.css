@@ -1,0 +1,101 @@
+*, *:before, *:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#nav{
+	margin: 0 auto;
+	border-top: 5px solid red;
+    border-bottom: 1px solid red;
+    padding: 0 0 1% 0;
+}
+
+#nav-top{
+	height: 25px;
+	width: 100%;
+	margin: 6px 0 -4px 0;
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size: 14px; 
+}
+
+#nav-top>span>span{
+	font-style: italic;
+	font-weight: 700;
+	color: red;
+}
+
+#nav-top>span{
+	margin-left: 15%;
+	margin-right: 6%;
+}
+
+.nav-top-button{
+	float: right;
+	margin: 0;
+	height: 25px;
+	border: 0;
+	padding: 3px 30px;
+	margin-top: -5px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#logo{
+	background-image: url("images/logo.png");
+	height: 58px;
+	width: 25%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin: 1.5% 1% 0 0;
+    padding: 0;
+}
+
+#nav-links-container{
+	display: inline-block;
+}
+
+#nav-links{
+	list-style: none;
+}
+
+#nav-links li{
+	display: inline-block;
+	font-size: 14px;
+	font-family: sans-serif;
+    color: #ff0000;
+    text-transform: uppercase;
+    padding: 0 3px;
+    font-weight: 700;
+}
+
+#nav-links :hover{
+	color: #444;
+	cursor: pointer;
+}
+
+#nav-search-container{
+	display: inline-block;
+	float: right;
+	position: absolute;
+	right: 0px;
+	top: 35px;
+	width: 550px;
+}
+
+#nav-search-container > div{
+	display: inline-block;
+	padding:0 1.5%;
+	float: left;
+}
+
+#nav-search-container #search-box{
+	width: 150px;
+	border-radius: 3px;
+}
+
+.glyphicon{
+	padding: 0 5px;
+}
