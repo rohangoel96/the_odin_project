@@ -24,6 +24,9 @@
 	font-weight: 700;
 	color: red;
 }
+#nav-search-container div span{
+	color: red;
+}
 
 #nav-top>span{
 	margin-left: 15%;
@@ -49,8 +52,9 @@
 	background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    margin: 1.5% 1% 0 0;
+    margin: 1.5% 2% 0 0%;
     padding: 0;
+    display: inline-block;
 }
 
 #nav-links-container{
@@ -76,6 +80,12 @@
 	cursor: pointer;
 }
 
+.underline_hover :hover{
+	cursor: pointer;
+	text-decoration: underline;
+
+}
+
 #nav-search-container{
 	display: inline-block;
 	float: right;
@@ -98,4 +108,78 @@
 
 .glyphicon{
 	padding: 0 5px;
+}
+
+.nav-top-button_after_break{
+	display: none;
+}
+
+.gly_show_at_break{
+	display: none;
+}
+
+.dropdown{
+	display: none;
+}
+
+@media only screen and (max-width: 992px){
+ 	#nav-links-container{
+ 		display: none;
+ 	}
+
+ 	#logo{
+ 		width: 250px;
+ 		float: left;
+ 		margin: 0 0 0 20px;
+ 	}
+
+ 	#nav{
+		margin: 0 auto;
+		border-top: 0;
+	    border-bottom: 1px solid red;
+	    padding: 0 0 1% 0;
+	    height: 65px;
+	}
+
+	.hide_at_break{
+		display: none;
+	}
+
+	.nav-top-button_after_break{
+		display: inline-block;
+		width: 49%;
+		margin: 0;
+		border: 0;
+		font-family: Georgia, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	#nav-search-container-after-break{
+		display: inline-block;
+		margin-left: 78%;
+		margin-top :-25px; 
+	}
+
+	#nav-search-container-after-break span{
+		display: inline-block;
+		font-size: 38px;
+		vertical-align: middle;
+	}
+
+	.gly_show_at_break{
+		display: inline-block;
+	}
+
+	.dropdown{
+		display: inline-block;
+	}
+
+	.dropdown button{
+		height: 42px;
+		display: inline-block;
+		padding: 0;
+		border: 0;
+	}
+
+	
 }

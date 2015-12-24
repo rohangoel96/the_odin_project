@@ -13,10 +13,10 @@
 
 	</head>
 	<body>
-		<div id="nav-top" class="text-center">
-			<span class="text-center">Get Full Digital Access When You Sign Up for Home Delivery. <span> &nbsp;More Info</span></span>
+		<div id="nav-top" class="text-center hide_at_break">
+			<span class="text-center hide_at_break">Get Full Digital Access When You Sign Up for Home Delivery. <span> &nbsp;More Info</span></span>
 			<button type="button" class="btn btn-default nav-top-button" style="background-color:white;">SignIn</button>
-			<button type="button" class="btn btn-default nav-top-button" style="background-color:black;color:white;">Register</button>
+			<button type="button" class="btn btn-default nav-top-button" style="background-color:black; color:white;">Register</button>
 		</div>
 		<div id="nav" class="text-center">
 			<div id="logo"></div>
@@ -35,24 +35,49 @@
 				</ul>
 			</div>
 			<div id="nav-search-container">
-				<div class="">
-					<span>
-						<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>US Edition
+				<div class="underline_hover">
+					<span class="hide_at_break">
+						<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>						<span>US Edition</span>
 					</span>
 				</div>
-				<div class="">
-					<span>
-						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>Social
+				<div class="underline_hover">
+					<span class="hide_at_break">
+						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+							<span>Social</span>
 					</span>
 				</div>
-				<div>
-					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					<input type="text" id="search-box">
+				<div class="hide_at_break">
+					<span class="glyphicon glyphicon-search hide_at_break" aria-hidden="true"></span>
+					<input type="text" id="search-box" class="hide_at_break">
 				</div>
-				<div>
-					<span>Try NewsWeek</span>
+				<div class="hide_at_break underline_hover">
+					<span class="hide_at_break">Try NewsWeek</span>
 				</div>
+
+				<!--VISIBLE ONLY IN TABLET MODE-->
+				<div id="nav-search-container-after-break">
+					<div class="dropdown pull-right">
+						<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span class="glyphicon glyphicon-globe gly_show_at_break" aria-hidden="true"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							<li role="presentation"><a role="menuitem" href="#">US</a></li>
+							<li role="presentation"><a role="menuitem" href="#">Europe</a></li>
+						 </ul>
+					</div>
+					<div class="dropdown pull-right">
+						<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span class="glyphicon glyphicon-search gly_show_at_break" aria-hidden="true"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							<li role="presentation"><input type="text" class="" id="search_field"></li>
+						 </ul>
+					</div>
+				</div>
+
 			</div>
+		</div>
+		<div id="button_wrapper_after_break" class="text-center">
+			<button type="button" class="btn btn-default nav-top-button_after_break">SignIn</button>
+			<button type="button" class="btn btn-default nav-top-button_after_break">Register</button>
 		</div>
 		<div class="container">
 			
