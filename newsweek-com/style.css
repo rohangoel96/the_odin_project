@@ -188,6 +188,7 @@
 .follow-tabs li a span{
 	vertical-align: middle;
 	color: white;
+	margin-top: 5px;
 }
 .follow-tabs ul > li.active > a,
 .follow-tabs ul > li.active > a:hover,
@@ -336,5 +337,8 @@ footer{
 		border: 0;
 	}
 
+	#right_side_col{
+		display: none;
+	}
 	
 }
