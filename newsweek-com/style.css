@@ -122,6 +122,161 @@
 	display: none;
 }
 
+#cover_image_container{
+	padding: 0;
+}
+
+#cover_image_container img{
+	margin: 30px 0 0 0;
+}
+
+.follow-box,.side-bar-box {
+	background-image: url("images/deco-stripes.png");
+	padding: 15px;
+	margin-bottom:30px; 
+}
+
+.side-bar>div{
+	padding-bottom: 30px;
+}
+
+.side-bar-title span,
+.side-bar-title p{
+	display: inline-block;
+	color: white;
+}
+.side-bar-title p{
+	font-weight: bold;
+	font-family: "Roboto";
+	margin: 0;
+}
+.side-bar-title {
+	display: inline-block;
+	background-color: #20C3F3;
+	padding: 0 9px;
+	height: 20px;
+	margin-bottom: 15px;
+}
+
+.subscribe-box{
+	width: 100%;
+}
+.follow-tabs ul{
+	padding: 0;
+	text-align: center;
+}
+.tab-content{
+	margin-top: 5px;
+	background-color: white;
+}
+
+.follow-tabs li{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-color: #d3d3d3;
+	border-radius: 100%;
+	border: 2px solid white;
+	text-align: center;
+}
+.follow-tabs li a{
+	display: inline-block;
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+}
+.follow-tabs li a span{
+	vertical-align: middle;
+	color: white;
+}
+.follow-tabs ul > li.active > a,
+.follow-tabs ul > li.active > a:hover,
+.follow-tabs ul > li.active > a:focus {
+	background-color: #20C3F3;
+}
+
+.follow-tabs .tab-content form{
+	padding: 5px;
+	
+}
+
+.follow-tabs .tab-content form input{
+	border: none;
+	margin: 5px 0;
+}
+.follow-tabs .tab-content form input:first-child,
+.most-shared-box ul li{
+	border-bottom: 1px solid #d3d3d3;
+}
+.follow-tabs .tab-content form input:first-child{
+	font: 12px/20px "Roboto", sans-serif;
+	width: 65%;
+}
+.follow-tabs .tab-content form input:last-child{
+	font: 12px/20px "Roboto", sans-serif;
+	background-color: #20C3F3;
+	font-weight: 500;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+	width: 30%;
+}
+
+.most-shared-box ul{
+	padding: 15px;
+	list-style: none;
+	background-color: white;
+	margin: 0;
+}
+.most-shared-box ul li{
+	padding: 10px 0;
+}
+
+.most-shared-box ul li:first-child{
+	padding-top: 0;
+}
+
+.most-shared-box ul li a p:hover{
+	color: #20C3F3;
+	transition: all 0.25s ease;
+}
+.main-section-wrapper,
+.mag-wrapper,
+footer{
+	font-family: "Roboto",Arial, sans-serif;
+}
+.most-shared-box ul li>p{
+	font-style: italic;
+	margin: 0;
+	color: #7D7D7D;
+
+}
+.most-shared-box ul li a p{
+	margin: 0;
+	display: inline-block;
+	font-size: 16px;
+	color: #505050;
+}
+.most-shared-box ul li a p span{
+	font-size: 10px;
+	color: white;
+	padding: 2px;
+	background-color: #20C3F3;
+	border-radius: 100%;
+}
+
+.most-read{
+	margin: 15px 0;
+}
+
+#right_side_col{
+	margin: 30px 0px 0 0;
+	padding-left: 40px;
+}
+
+.row{
+	padding: 0px 15px;
+}
+
+
 @media only screen and (max-width: 992px){
  	#nav-links-container{
  		display: none;
