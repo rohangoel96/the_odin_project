@@ -20,3 +20,6 @@
 
 - The Next Web HomePage ( Basic Responsive Web Design )
 ![ScreenShot](http://oi65.tinypic.com/fw5dzr.jpg)
+
+- NewsWeek HomePage ( Bootstrap - More Responsive Web Design )
+![ScreenShot](http://oi68.tinypic.com/jqmcxu.jpg)
