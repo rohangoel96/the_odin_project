@@ -128,12 +128,19 @@
 
 #cover_image_container img{
 	margin: 30px 0 0 0;
+	border-bottom: 3px solid red;
 }
 
 .follow-box,.side-bar-box {
 	background-image: url("images/deco-stripes.png");
 	padding: 15px;
 	margin-bottom:30px; 
+}
+
+.side-bar-box{
+	width: 112%;
+	margin-left: -15px;
+	padding: 20px;
 }
 
 .side-bar>div{
