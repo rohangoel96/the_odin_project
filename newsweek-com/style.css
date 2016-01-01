@@ -284,6 +284,88 @@ footer{
 	padding: 0px 15px;
 }
 
+#cover_image_container{
+	margin-bottom: 20px;
+}
+
+
+h1{
+	font-size: 2.5rem !important;
+	font-weight: 700 !important;
+	font-family: "Roboto",Arial, sans-serif !important;
+	color: black !important;
+}
+
+#article_head a :hover{
+	cursor: pointer;
+	color: #23527c !important;
+	text-decoration: underline;
+}
+
+#article_head p{
+	font-family: "Roboto",Arial, sans-serif !important;
+	color: black !important;
+	margin-top: 15px;
+
+}
+
+.article_head{
+	font-size: 24px !important;
+	font-weight: 700 !important;
+	font-family: "Roboto",Arial, sans-serif !important;
+	color: black !important;
+}
+
+.article_head :hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.article_text{
+	margin-top: 8px;
+	font-size: 16px !important;
+	font-family: "Roboto",Arial, sans-serif !important;
+	color: gray !important;
+	margin-bottom: 15px;
+}
+
+#artilces_container{
+	margin-top: 50px;
+	padding: 0;
+}
+
+.article_image_container img{
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.article_related_text_container{
+	font-size: 12px !important;
+	font-family: "Roboto",Arial, sans-serif !important;
+	color: black !important;
+	font-weight: 700;
+}
+
+.article_related_text :hover{
+	text-decoration: underline !important;
+	cursor: pointer;
+}
+
+.article_type{
+	font-size: 12px !important;
+	font-family: "Roboto",Arial, sans-serif !important;
+	color: red !important;
+	font-weight: 700;
+}
+
+.article{
+	border-top: 1px solid gray;
+	padding-top: 30px;
+	padding-bottom: 25px;
+}
+
+
+
 
 @media only screen and (max-width: 992px){
  	#nav-links-container{
