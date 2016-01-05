@@ -3,3 +3,80 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body{
+	background-image: url("http://files.hostgator.co.in/hostgator233907/image/light_blue_background_color.jpg");
+}
+
+h1{
+	font-size: 30px !important;
+	margin-top: 35px !important;
+}
+
+#calculator-wrapper{
+	margin-top: 25px;
+}
+
+#monitor{
+	height: 120px;
+	width: 300px;
+	background-color: black;
+}
+
+#key-wrapper{
+	height: 375px;
+	width: 300px;
+}
+
+.sqr-button{
+	height: 75px;
+	width: 75px;
+	display: inline-block;
+	border: 1px solid black;
+	float: left;
+	background-color:#D8D9DB
+}
+
+.sqr-button :hover{
+	background-color: #B0B1B3;
+	cursor: pointer;
+}
+
+.orange{
+	background-color: #FB8915;
+}
+
+.orange :hover{
+	background-color: #e27404;
+}
+
+.orange p{
+	color: white;
+}
+
+#B0{
+	width: 150px !important;
+}
+
+#key-wrapper div{
+	display: table;
+}
+
+#key-wrapper div p {
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+	font-size: 25px;
+	font-family: 'Unica One', cursive;
+}
+
+#screen-text{
+	font-family: 'Unica One', cursive;
+	color: white;
+	font-size: 40px;
+	position: relative;
+	right: 0;
+	top: 70px;
+	text-align: right;
+	margin-right: 10px;
+}
