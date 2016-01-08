@@ -15,21 +15,17 @@ function add(num1,num2){
 	return num1+num2
 }
 
-
 function multiply(num1,num2){
 	return num1*num2
 }
-
 
 function divide(num1,num2){
 	return num1/num2
 }
 
-
 function subtract(num1,num2){
 	return num1-num2
 }
-
 
 var num = document.getElementsByClassName("num");
 
@@ -42,13 +38,11 @@ for (var i = 0; i < num.length; i++) {
     num[i].addEventListener('click', showNumber, false);
 }
 
-
 function delActionListener(){
 	document.getElementById('screen-text').innerHTML = document.getElementById('screen-text').innerHTML.slice(0,-1)
 }
 
 document.getElementById('del').addEventListener('click', delActionListener, false)
-
 
 var opList = document.getElementsByClassName("operation");
 var op;
