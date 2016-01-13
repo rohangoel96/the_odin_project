@@ -3,3 +3,101 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+#header, #footer{
+	height: 75px !important;
+	background-color: #ff0000 !important;
+	width: 100%;
+}
+
+#header{
+	position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#header h1{
+	margin-top: 10px;
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	font-family:'Comfortaa', cursive, Georgia;
+}
+
+#header :hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#footer{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#footer p{
+	margin: 30px;
+	font-size: 18px;
+	color: white;
+	float: left;
+	font-family:'Comfortaa', cursive, Georgia;
+}
+
+#footer :hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#image{
+	height: 600px;
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-image: url("../images/cover.jpg");
+}
+
+#tabbed-pane-wrapper{
+	width: 1030px;
+	margin: 30px auto;
+	height: auto;
+}
+
+ul{
+	margin-left: 25px;
+}
+
+#tabs li{
+	display: inline-block;
+	background-color: red;
+	border-radius: 6px 6px 0 0;
+	padding: 10px 0;
+	width: 19%;
+	text-align: center;
+	text-shadow: 0 1px 0 #382e1e;
+	color: white;
+	font-family: "Lato",sans-serif;
+}
+
+ul :hover{
+	cursor: pointer;
+}
+
+#tab-content{
+	height: 405px;
+	width: 1024px;
+	border: 1px solid black;
+	margin-bottom: 100px;
+}
+
+#tab-content h2{
+	margin-top: 150px;
+	font-family: "Lato",sans-serif;
+	font-size: 36px;
+	text-align: center;
+}
+
+#tab-content p{
+	text-align: center;
+	font-size: 24px;
+	margin-top: 5px;
+}
