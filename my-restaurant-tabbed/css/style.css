@@ -76,10 +76,15 @@ ul{
 	text-shadow: 0 1px 0 #382e1e;
 	color: white;
 	font-family: "Lato",sans-serif;
+	height: 30px;
+	transition : position 0.3s;
 }
 
 ul :hover{
 	cursor: pointer;
+	height: 37px !important;
+	position: relative;
+	top: -7px;
 }
 
 #tab-content{
@@ -87,6 +92,7 @@ ul :hover{
 	width: 1024px;
 	border: 1px solid black;
 	margin-bottom: 100px;
+	margin-top: -7px;
 }
 
 #tab-content h2{
@@ -100,4 +106,12 @@ ul :hover{
 	text-align: center;
 	font-size: 24px;
 	margin-top: 5px;
+}
+
+.selected{
+	height: 37px !important;
+	position: relative;
+	top: -7px;
+	text-decoration: underline;
+	z-index: -1
 }
