@@ -26,3 +26,6 @@
 
 - iPhone Calculator ( More JavaScript )
 ![ScreenShot](http://oi63.tinypic.com/205qhs2.jpg)
+
+- Tabbed Restaurant Page ( Basic jQuery )
+![ScreenShot](http://oi64.tinypic.com/2ilg7j8.jpg)
