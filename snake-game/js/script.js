@@ -1,9 +1,15 @@
+var BOARD_SIZE = 35;
+var FRUIT_GENERATION_SPEED = 500;
+var fruitX;
+var fruitY;
+var fruit_on_board = false;
+var score = 0;  
 var snake = {head : [17,17], direction : 'u', size : 2, speed : 300, body : [[18,17],[19,17]]};
 
 function drawBoard () {
 	//board size is 35 x 35 with each pixel size being 15px x 15px
-	for (var i = 0; i < 35; i++) {
-		for (var j = 0; j < 35; j++) {
+	for (var i = 0; i < BOARD_SIZE; i++) {
+		for (var j = 0; j < BOARD_SIZE; j++) {
 			$("#board-wrapper").append("<div id='"+i+"-"+j+"' class='pixel'></div>");
 		};
 	};
@@ -63,7 +69,10 @@ function move(){
 		$("#"+snake.body[j][0]+"-"+snake.body[j][1]).addClass('snake-body');
 	};
 
+	checkCollision();
+	eatFruit();
 }
+
 
 function increaseSize(){
 	var temp = []
@@ -78,12 +87,48 @@ function increaseSize(){
 }
 
 function createFruit () {
-	// body...
+	var randomRow = Math.floor((Math.random() * (BOARD_SIZE-1)) + 1);
+	var randomCol = Math.floor((Math.random() * (BOARD_SIZE-1)) + 1);
+	var randomCordinate = [randomRow, randomCol];
+
+	if(snake.body.indexOf(randomCordinate)<0 && !fruit_on_board){
+		$("#"+randomRow+"-"+randomCol).addClass('fruit');
+		fruit_on_board = true;
+		fruitY = randomRow;
+		fruitX = randomCol;
+	} 
+
 }
 
+
+function eatFruit () {
+	if (snake.head[0] === fruitY && snake.head[1] === fruitX) {
+		console.log(++score);
+		$("#"+fruitY+"-"+fruitX).removeClass('fruit');
+		increaseSize();	
+		fruit_on_board = false;
+	};
+}
+
+function checkCollision(){
+	if (snake.head[0] === BOARD_SIZE || snake.head[0] === -1 || snake.head[1] === -1 || snake.head[1] === BOARD_SIZE) {
+		alert("Game Over : Don't bang up against the walls")
+	}
+	else{
+		
+		for (var i = 0; i < snake.body.length; i++) {
+			if (snake.head[0]===snake.body[i][0] && snake.head[1]===snake.body[i][1]) {
+				alert("Game Over : Don't eat up yourself");
+			};
+		};
+
+
+	};
+}
 
 
 $( document ).ready(function() {
 	drawBoard();
 	setInterval(move, snake.speed);
+	setInterval(createFruit, FRUIT_GENERATION_SPEED);
 });
