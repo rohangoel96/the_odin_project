@@ -25,3 +25,7 @@
 .snake-body{
 	background-color: green !important;
 }
+
+.fruit{
+	background-color: blue !important;
+}

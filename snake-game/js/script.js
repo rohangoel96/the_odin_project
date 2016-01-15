@@ -1,4 +1,4 @@
-var snake = { position : [17,17], direction : 'u', speed : 300}
+var snake = {head : [17,17], direction : 'u', size : 2, speed : 300, body : [[18,17],[19,17]]};
 
 function drawBoard () {
 	//board size is 35 x 35 with each pixel size being 15px x 15px
@@ -8,7 +8,9 @@ function drawBoard () {
 		};
 	};
 
-	$("#"+snake.position[0]+"-"+snake.position[1]).addClass('snake-head');
+	$("#"+snake.head[0]+"-"+snake.head[1]).addClass('snake-head');
+	$("#"+snake.body[0][0]+"-"+snake.body[0][1]).addClass('snake-body');
+	$("#"+snake.body[1][0]+"-"+snake.body[1][1]).addClass('snake-body');	
 }
 
 function setDirection(){
@@ -27,10 +29,11 @@ function setDirection(){
 
 function move(){
 
-	setDirection();
+	//move the snake's head
 
-	var currentRow = snake.position[0];
-	var currentCol = snake.position[1];
+	setDirection();
+	var currentRow = snake.head[0];
+	var currentCol = snake.head[1];
 	var newRow = currentRow;
 	var newCol = currentCol;
 	
@@ -41,10 +44,44 @@ function move(){
 		case 'u' : newRow = currentRow - 1; break;
 	}
 
+
 	$("#"+currentRow+"-"+currentCol).removeClass('snake-head');
 	$("#"+newRow+"-"+newCol).addClass('snake-head');
-	snake.position = [newRow,newCol];
+	snake.head = [newRow,newCol];
+
+	//move the body
+
+	for (var i = snake.body.length-1; i > 0; i--) {
+		snake.body[i] = snake.body[i-1]
+	};
+
+	snake.body[0] = [currentRow,currentCol];
+	
+	$(".pixel").removeClass('snake-body');
+
+	for (var j = 0; j < snake.body.length; j++) {
+		$("#"+snake.body[j][0]+"-"+snake.body[j][1]).addClass('snake-body');
+	};
+
 }
+
+function increaseSize(){
+	var temp = []
+	switch(snake.direction){
+		case 'l' : temp = [snake.body[snake.size-1][0],snake.body[snake.size-1][1]+1]; break;
+		case 'r' : temp = [snake.body[snake.size-1][0],snake.body[snake.size-1][1]-1]; break;
+		case 'd' : temp = [snake.body[snake.size-1][0]-1,snake.body[snake.size-1][1]]; break;
+		case 'u' : temp = [snake.body[snake.size-1][0]+1,snake.body[snake.size-1][1]]; break;
+	}
+	snake.size++;
+	snake.body.push(temp);
+}
+
+function createFruit () {
+	// body...
+}
+
+
 
 $( document ).ready(function() {
 	drawBoard();
