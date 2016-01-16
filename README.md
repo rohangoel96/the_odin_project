@@ -29,3 +29,6 @@
 
 - Tabbed Restaurant Page ( Basic jQuery )
 ![ScreenShot](http://oi64.tinypic.com/2ilg7j8.jpg)
+
+- JS Snake Game ( More jQuery )
+![ScreenShot](http://oi63.tinypic.com/ou5o36.jpg)
