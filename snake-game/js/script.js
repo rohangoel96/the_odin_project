@@ -14,6 +14,7 @@ function drawBoard () {
 		};
 	};
 
+	//make inital body on board
 	$("#"+snake.head[0]+"-"+snake.head[1]).addClass('snake-head');
 	$("#"+snake.body[0][0]+"-"+snake.body[0][1]).addClass('snake-body');
 	$("#"+snake.body[1][0]+"-"+snake.body[1][1]).addClass('snake-body');	
@@ -21,7 +22,7 @@ function drawBoard () {
 
 function setDirection(){
 	$(document).keydown(function(event) {
-	  if (event.which === 39 && snake.direction !=='l') {
+	  if (event.which === 39 && snake.direction !=='l') { //can't move in the opposite direction
 	    snake.direction = 'r';
 	  } else if (event.which === 37 && snake.direction !=='r') {
 	    snake.direction = 'l';
@@ -82,8 +83,7 @@ function increaseSize(){
 	}
 	snake.size++;
 	snake.body.push(temp);
-	snake.speed = snake.speed - 10;
-	console.log(snake.speed)
+	snake.speed = snake.speed - 10; //increase speed of the snake (decrease updation time) 
 }
 
 function createFruit () {
@@ -131,6 +131,7 @@ function updateScoreOnScreen(score){
 }
 
 function newGame(){
+	//reset everthing
 	$("#board-wrapper").html("")
 	$(".pixel").removeClass('fruit  ');
 	BOARD_SIZE = 35;
