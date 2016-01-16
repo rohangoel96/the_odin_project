@@ -21,13 +21,13 @@ function drawBoard () {
 
 function setDirection(){
 	$(document).keydown(function(event) {
-	  if (event.which === 39) {
+	  if (event.which === 39 && snake.direction !=='l') {
 	    snake.direction = 'r';
-	  } else if (event.which === 37) {
+	  } else if (event.which === 37 && snake.direction !=='r') {
 	    snake.direction = 'l';
-	  } else if (event.which === 38) {
+	  } else if (event.which === 38 && snake.direction !=='d') {
 	    snake.direction = 'u';
-	  } else if (event.which === 40) {
+	  } else if (event.which === 40 && snake.direction !=='u') {
 	    snake.direction = 'd';
 	  }
 	});
@@ -41,14 +41,13 @@ function move(){
 	var currentCol = snake.head[1];
 	var newRow = currentRow;
 	var newCol = currentCol;
-
+	
 	switch(snake.direction){
 		case 'l' : newCol = currentCol - 1; break;
 		case 'r' : newCol = currentCol + 1; break;
 		case 'd' : newRow = currentRow + 1; break;
 		case 'u' : newRow = currentRow - 1; break;
 	}
-
 
 	$("#"+currentRow+"-"+currentCol).removeClass('snake-head');
 	$("#"+newRow+"-"+newCol).addClass('snake-head');
@@ -72,7 +71,6 @@ function move(){
 	eatFruit();
 	setTimeout(move, snake.speed);
 }
-
 
 function increaseSize(){
 	var temp = []
@@ -102,7 +100,6 @@ function createFruit () {
 
 }
 
-
 function eatFruit () {
 	if (snake.head[0] === fruitY && snake.head[1] === fruitX) {
 		console.log(++score);
@@ -129,11 +126,9 @@ function checkCollision(){
 	};
 }
 
-
 function updateScoreOnScreen(score){
 	$("#score").html(score);
 }
-
 
 function newGame(){
 	$("#board-wrapper").html("")
@@ -148,7 +143,6 @@ function newGame(){
 	snake = {head : [17,17], direction : 'u', size : 2, speed : 150, body : [[18,17],[19,17]]}; 
 	drawBoard()
 }
-
 
 $( document ).ready(function() {
 	newGame();

@@ -9,7 +9,7 @@ body{
 }
 
 h1{
-	margin: 15px auto !important;
+	margin: 10px auto !important;
 	font-size: 36px;
 	font-family: 'Unica One', cursive;
 	font-weight: 700;
@@ -17,7 +17,7 @@ h1{
 
 #score-wrapper{
 	position: relative;
-	top: 13px;
+	top: 10px;
 	padding: 0 5px;
 	font-size: 24px;
 	font-family: 'Unica One', cursive;
