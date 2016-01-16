@@ -4,7 +4,7 @@ var fruitX;
 var fruitY;
 var fruit_on_board = false;
 var score = 0;  
-var snake = {head : [17,17], direction : 'u', size : 2, speed : 300, body : [[18,17],[19,17]]};
+var snake = {head : [17,17], direction : 'u', size : 2, speed : 150, body : [[18,17],[19,17]]};
 
 function drawBoard () {
 	//board size is 35 x 35 with each pixel size being 15px x 15px
@@ -36,13 +36,12 @@ function setDirection(){
 function move(){
 
 	//move the snake's head
-
 	setDirection();
 	var currentRow = snake.head[0];
 	var currentCol = snake.head[1];
 	var newRow = currentRow;
 	var newCol = currentCol;
-	
+
 	switch(snake.direction){
 		case 'l' : newCol = currentCol - 1; break;
 		case 'r' : newCol = currentCol + 1; break;
@@ -71,6 +70,7 @@ function move(){
 
 	checkCollision();
 	eatFruit();
+	setTimeout(move, snake.speed);
 }
 
 
@@ -84,6 +84,8 @@ function increaseSize(){
 	}
 	snake.size++;
 	snake.body.push(temp);
+	snake.speed = snake.speed - 10;
+	console.log(snake.speed)
 }
 
 function createFruit () {
@@ -107,28 +109,49 @@ function eatFruit () {
 		$("#"+fruitY+"-"+fruitX).removeClass('fruit');
 		increaseSize();	
 		fruit_on_board = false;
+		updateScoreOnScreen(score);
 	};
 }
 
 function checkCollision(){
 	if (snake.head[0] === BOARD_SIZE || snake.head[0] === -1 || snake.head[1] === -1 || snake.head[1] === BOARD_SIZE) {
-		alert("Game Over : Don't bang up against the walls")
+		alert("Game Over : Don't bang up against the walls.\nYour Score is : "+score);
+		newGame();
 	}
 	else{
 		
 		for (var i = 0; i < snake.body.length; i++) {
 			if (snake.head[0]===snake.body[i][0] && snake.head[1]===snake.body[i][1]) {
-				alert("Game Over : Don't eat up yourself");
+				alert("Game Over : Don't eat up yourself!\nYour Score is : "+score);
+				newGame();
 			};
 		};
-
-
 	};
 }
 
 
+function updateScoreOnScreen(score){
+	$("#score").html(score);
+}
+
+
+function newGame(){
+	$("#board-wrapper").html("")
+	$(".pixel").removeClass('fruit  ');
+	BOARD_SIZE = 35;
+	FRUIT_GENERATION_SPEED = 500;
+	fruitX;
+	fruitY;
+	fruit_on_board = false;
+	score = 0;  
+	updateScoreOnScreen(0);
+	snake = {head : [17,17], direction : 'u', size : 2, speed : 150, body : [[18,17],[19,17]]}; 
+	drawBoard()
+}
+
+
 $( document ).ready(function() {
-	drawBoard();
-	setInterval(move, snake.speed);
+	newGame();
+	move();
 	setInterval(createFruit, FRUIT_GENERATION_SPEED);
 });
